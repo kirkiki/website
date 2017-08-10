@@ -1,34 +1,35 @@
 extends layout
 
 block content
-  .ui.attached.stackable.menu
-    .ui.container
-      a.item
-        i.home.icon
-        |  Home
-      a.item
-        i.grid.layout.icon
-        |  Browse
-      a.item
-        i.mail.icon
-        |  Messages
-      .ui.simple.dropdown.item
-        | More
-        i.dropdown.icon
-        .menu
-          a.item
-            i.edit.icon
-            |  Edit Profile
-          a.item
-            i.globe.icon
-            |  Choose Language
-          a.item
-            i.settings.icon
-            |  Account Settings
-      a.item
-        img(src="/assets/py.png")
-      .right.item
-        .ui.input
-          input(type='text', placeholder='Search...')
-  h1= title
-  p Welcome to #{title}
+  .pusher
+    .ui.attached.stackable.menu
+      .ui.container
+        a.item
+          i.home.icon
+          |  Home
+        a.item
+          i.grid.layout.icon
+          |  Browse
+        a.item
+          i.mail.icon
+          |  Messages
+        .ui.simple.dropdown.item
+          | More
+          i.dropdown.icon
+          .menu
+            a.item
+              i.edit.icon
+              |  Edit Profile
+            a.item
+              i.globe.icon
+              |  Choose Language
+            a.item
+              i.settings.icon
+              |  Account Settings
+        a.item.logo
+          img(src="/assets/py.png")
+        .right.item
+          .ui.input
+            input(type='text', placeholder='Search...')
+    h1=Hi 
+    p welcome, to Nenozaure. This website is building up 
