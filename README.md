@@ -2,7 +2,9 @@
 
 cloner le projet
 
-```$npm install```
-```$node ./bin/www```
+```sh
+$npm install
+$node ./bin/www
+```
 
 --> localhost:3000
