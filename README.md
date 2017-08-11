@@ -4,6 +4,6 @@ cloner le projet
 
 $npm install
 
-node ./bin/www
+$node ./bin/www
 
-localhost:3000
+--> localhost:3000
