@@ -1,0 +1,16 @@
+extends ../layout
+
+block content
+	each movie, i in movies
+		.ui.one.column.grid.centered.movies
+			.ui.items
+				.item
+					.ui.small.image
+						img(src='/assets/lahaine.png')
+					.content
+						.header=movie.title 
+						.meta
+							span.year=movie.year 
+							span.real=movie.real 
+						.description
+							p=movie.comment

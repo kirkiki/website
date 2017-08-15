@@ -1,0 +1,24 @@
+doctype html
+html
+	head
+		title= title 
+		link(rel='stylesheet', href='/stylesheets/style.css')
+		link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/semantic.min.css')
+		script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js')
+		script(src='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/semantic.min.js')
+	body
+		.ui.attached.stackable.menu.header.inverted
+			.ui.container.center
+				a.item(href='/')
+					i.home.icon
+					|  Home
+				a.item(href='/ronan')
+					i.id.card.icon
+					|  Ronan
+				a.item(href='/flux')
+					i.newspaper.icon
+					|  Flux
+				a.item(href='/movies')
+					i.film.icon
+					|  Films
+		block content
