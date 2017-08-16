@@ -1,5 +1,5 @@
 var mongoose = require('mongoose'),
-        Articles = require('../models/Movies.js');
+        Articles = require('../models/Flux.js');
 
 var Flux = {
         index: function(req,res){
