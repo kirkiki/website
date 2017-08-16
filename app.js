@@ -10,6 +10,7 @@ var index = require('./app/routes/index');
 var users = require('./app/routes/users');
 var movies = require('./app/routes/movies');
 var flux = require('./app/routes/flux');
+var nose = require('./app/routes/nez');
 var app = express();
 
 // view engine setup
@@ -30,6 +31,7 @@ app.use('/', index);
 app.use('/users', users);
 app.use('/movies', movies);
 app.use('/flux', flux);
+app.use('/nez', nose);
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   var err = new Error('Not Found');
