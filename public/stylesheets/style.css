@@ -10,3 +10,6 @@ body {
 .center{
   justify-content: center;
 }
+.ui.items.movies{
+  width: 650px;
+}
