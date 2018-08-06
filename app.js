@@ -4,13 +4,15 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-var mongo = require("mongodb");
+var mongo = require('mongodb');
 var mongoose = require('mongoose');
 var index = require('./app/routes/index');
 var users = require('./app/routes/users');
 var movies = require('./app/routes/movies');
 var flux = require('./app/routes/flux');
 var nez = require('./app/routes/nez');
+var k4r1m = require('./app/routes/k4r1m');
+var adminPot = require('./app/routes/admin');
 var app = express();
 
 // view engine setup
@@ -32,6 +34,8 @@ app.use('/users', users);
 app.use('/movies', movies);
 app.use('/flux', flux);
 app.use('/nez', nez);
+app.use('/k4-r1m2', k4r1m);
+app.use('/admin', adminPot);
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   var err = new Error('Not Found');

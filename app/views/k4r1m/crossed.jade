@@ -1,0 +1,10 @@
+extends ../layout
+
+block content
+    .ui.text.container
+        each c, i in crossed
+            span=c.title
+            each note in c.content
+                ul
+                    li=note
+                    

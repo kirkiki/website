@@ -1,12 +1,13 @@
 extends ../layout 
 
 block content 
-	i.ui.text.container
-		each article, i in articles
+	each article, i in articles
+		i.ui.text.container
 			img.ui.small.left.floated.image.visible(src='/assets/nez.png')
 			h1=article.title
-			p orem ipsum dolor sit amet, consectetur adipiscing elit. Morbi a volutpat nulla. Aenean hendrerit risus at est tempor, et placerat nisi luctus. Duis eget consectetur tortor. Nunc nisl nibh, dictum vel orci nec, vulputate viverra odio. Maecenas eget leo in purus pretium condimentum vel sed libero. Duis nec ex nulla. Quisque pretium erat nec placerat fringilla. Fusce dapibus sodales massa venenatis ultrices. Aliquam ante arcu, gravida vel facilisis id, pellentesque et nunc. Pellentesque viverra lorem purus, scelerisque dapibus nunc posuere ut. Morbi fermentum velit vitae vestibulum dapibus. In tristique, magna quis hendrerit sagittis, mi risus pharetra massa, sed placerat erat sem faucibus tellus. Morbi porta nibh eu purus venenatis vestibulum.
-
-			p Vivamus posuere eu mauris eget tempor. Nunc commodo accumsan auctor. Cras pharetra mollis sapien mollis porta. Phasellus posuere condimentum consequat. Nullam feugiat, nunc at rutrum mollis, turpis nulla bibendum elit, ullamcorper rhoncus felis lectus ut sapien. Vestibulum sagittis fringilla arcu, ut tempus quam dignissim non. Fusce maximus neque a diam feugiat, et viverra justo scelerisque. Cras velit velit, semper sed dignissim ut, maximus efficitur eros. Praesent sollicitudin ipsum at maximus ultricies. Quisque in enim eget purus consequat pulvinar. Morbi vitae dui non diam gravida lacinia quis pretium nisi. Phasellus non imperdiet massa. Curabitur augue arcu, pulvinar a orci nec, faucibus viverra mi. Aenean scelerisque mattis est, non varius diam sollicitudin at. Nam efficitur massa varius erat scelerisque sollicitudin. Aliquam sit amet justo erat.
 			p=article.content
 			p by #{article.author}
+		br
+		br
+		br
+		br
